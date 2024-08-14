@@ -211,6 +211,9 @@ a {
 }
 
 .banner-discription {
+    width: 329px;
+    margin-top: 0;
+    margin-bottom: 13px;
     color: rgba(var(--light-rgb), .8);
     font-weight: 400;
     font-size: 15px;
@@ -220,7 +223,6 @@ a {
 }
 
 .banner-btn {
-    position: absolute;
     width: 170px;
     height: 58px;
     font-family: var(--nunito-sans);
@@ -229,7 +231,13 @@ a {
     line-height: 18px;
     background-color: var(--accent-light);
     border-radius: 5px;
-
+    border: none;
     color: #1E2F40;
     padding: 20px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner-btn:hover{
+    background-color: var(--accent-dark);
 }
