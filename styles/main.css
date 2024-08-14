@@ -253,23 +253,23 @@ a {
 }
 
 .select-items{
-    display: inline-grid;
-    font-weight: 400;
+    color: var(--dark);
     font-size: 15px;
-    line-height: 160%;
-    margin-top: 0;
-    margin-bottom: 10px;
-    width: 279px;
-    height: 44px;
-    box-sizing: border-box;
-    border: 1px solid rgb(222, 222, 222);
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../img/menu/chevron-down.svg);
+    background-size: 14px 10px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
     border-radius: 22px;
-    background: rgb(255, 255, 255);
 }
 
 .menu-title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    color: var(--dark);
     font-family: var(--nunito-sans);
     font-weight: 700;
     font-size: 44px;
@@ -289,6 +289,7 @@ a {
     height: 430px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .menu-thumb img {
@@ -304,6 +305,7 @@ a {
 .menu-item {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: var(--nunito-sans);
     height: 579px;
     font-weight: 600;
     font-size: 30px;
@@ -313,23 +315,25 @@ a {
 }
 
 .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 14px;
+    font-family: var(--nunito-sans);
     line-height: 129%;
     text-transform: uppercase;
-    text-align: center;
     width: 152px;
     height: 38px;
     border-radius: 5px;
     border: none;
-    position: relative;
-    padding-left: 26px;
     background-color: var(--accent-light);
 }
 
 .menu-btn::before{
     content: '';
-    position: absolute;
     display: block;
     width: 18px;
     height: 18px;
@@ -340,22 +344,23 @@ a {
 }
 
 .menu-name{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    color: var(--dark);
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-family: var(--nunito-sans);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
-    line-height: 129%;
+    line-height: 126%;
     text-align: center;
 }
 
 .menu-price{
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: var(--nunito-sans);
     font-weight: 700;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 126%;
     text-align: center;
     color: rgba(68, 55, 55, 0.5);
 }
