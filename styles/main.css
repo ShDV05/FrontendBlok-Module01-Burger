@@ -341,6 +341,7 @@ a {
     background-image: url(../img/menu/cart.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .menu-name{
@@ -366,3 +367,20 @@ a {
 }
 
 
+/*Footer*/
+.footer{
+    margin-top: 140px;
+    background-color: #1E2F40;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    padding-top: 111px;
+    padding-bottom: 106px;
+}
+
+.footer-logo{
+    width: 63px;
+    height: 56px;
+}
