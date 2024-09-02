@@ -252,7 +252,7 @@ a {
     margin-bottom: 34px;
 }
 
-.select-items{
+.select-items {
     color: var(--dark);
     font-size: 15px;
     appearance: none;
@@ -332,7 +332,7 @@ a {
     background-color: var(--accent-light);
 }
 
-.menu-btn::before{
+.menu-btn::before {
     content: '';
     display: block;
     width: 18px;
@@ -344,7 +344,7 @@ a {
     cursor: pointer;
 }
 
-.menu-name{
+.menu-name {
     color: var(--dark);
     margin-top: 0px;
     margin-bottom: 10px;
@@ -355,7 +355,7 @@ a {
     text-align: center;
 }
 
-.menu-price{
+.menu-price {
     margin-top: 0;
     margin-bottom: 20px;
     font-family: var(--nunito-sans);
@@ -368,19 +368,81 @@ a {
 
 
 /*Footer*/
-.footer{
-    margin-top: 140px;
+.footer {
     background-color: #1E2F40;
-}
-.footer-wrapper{
-    display: flex;
-    justify-content: space-between;
-    gap: 120px;
-    padding-top: 111px;
-    padding-bottom: 106px;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    margin-top: 140px;
+
 }
 
-.footer-logo{
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-logo {
     width: 63px;
     height: 56px;
+    display: block;
+    background-image: url(../img/logo_light-min.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-title {
+    font-family: var(--nunito-sans);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    color: var(--light);
+    margin-bottom: 13px;
+    margin-top: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+
+.footer-link {
+    color: rgba(var(--light-rgb), .9);
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-list-item {
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.footer-list-item span {
+    display: block;
+    color: rgba(var(--light-rgb), .9);
+    font-weight: 400;
+}
+
+.footer-list-item:not(:last-child){
+    margin-bottom: 14px;
+}
+
+.footer-tel{
+    display: block;
+    color: var(--accent-light);
+    font-family: var(--nunito-sans);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 12px;
 }
