@@ -7,6 +7,9 @@
     --dark: #443737;
     --light: #ffffff;
     --light-rgb: 255, 255, 255;
+    --line: #dedede;
+
+    --tr: 0.2s;
 }
 
 body {
@@ -52,12 +55,14 @@ a {
     flex-grow: 1;
     display: flex;
     gap: 47px;
+    
 }
 
 .nav-link {
     color: var(--dark);
     font-weight: 600;
     font-size: 20px;
+    
 }
 
 .nav-link::after {
@@ -66,8 +71,11 @@ a {
     width: 100%;
     background-color: transparent;
     border-radius: 1.5px;
-}
 
+}
+.nav-link:hover{
+   text-decoration: solid underline var(--accent-light) 4px; 
+}
 .nav-link:hover::after {
     background-color: var(--accent-light);
 }
@@ -81,7 +89,9 @@ a {
     font-size: 15px;
     position: relative;
 }
-
+.cart:hover{
+    text-decoration: underline solid var(--dark) 1px;
+}
 .cart::before {
     content: '';
     display: block;
@@ -105,6 +115,10 @@ a {
     color: var(--light);
     background-color: var(--accent-dark);
     border-radius: 100%;
+    transition: var(--tr);
+}
+.cart-count:hover{
+    background-color: var(--accent-light);
 }
 
 /*Hero*/
@@ -133,7 +147,13 @@ a {
 
 .breadcrumbs-link {
     color: rgba(var(--light-rgb), .5);
+    transition: var(--tr);
+    
+}
 
+.breadcrumbs-link:hover {
+    color: var(--accent-dark);
+    text-decoration: solid underline var(--accent-dark);
 }
 
 .breadcrumbs-item {
@@ -146,9 +166,7 @@ a {
     right: -12px;
 }
 
-.breadcrumbs-link:hover {
-    color: var(--accent-dark);
-}
+
 
 .hero-title {
     color: var(--light);
@@ -237,6 +255,7 @@ a {
     padding: 20px 10px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .banner-btn:hover {
@@ -330,8 +349,11 @@ a {
     border-radius: 5px;
     border: none;
     background-color: var(--accent-light);
+    transition: var(--tr);
 }
-
+.menu-btn:hover{
+    background-color: var(--accent-dark);
+}
 .menu-btn::before {
     content: '';
     display: block;
@@ -412,8 +434,12 @@ a {
     color: rgba(var(--light-rgb), .9);
     font-size: 15px;
     line-height: 160%;
+    transition: var(--tr);
 }
 
+.footer-link:hover{
+    text-decoration: underline solid var(--light) 1px;
+}
 .footer-list {
     list-style-type: none;
     padding-left: 0;
@@ -445,4 +471,9 @@ a {
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 12px;
+    transition: var(--tr);
+}
+
+.footer-tel:hover{
+    text-decoration: underline solid var(--accent-light) 3px;
 }
